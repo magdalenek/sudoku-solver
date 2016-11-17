@@ -1,0 +1,20 @@
+	
+	In this particular example, I decided to assess the difficulty level of sudoku puzzle based on calculating the depth of the backtracking algorithm. To do so, I counted a number of times the function solve_sudoku() needs to backtrack and re-assign a number. The following was observed:
+	
+	- Mystery Board 1 had 421547 recursive calls;
+	- Mystery Board 2 had no solution;
+	- Mystery Board 3: 14134 had recursive calls.
+	Therefore, it can be concluded that Mystery Puzzle 1 is of “extremely hard” difficulty, Mystery Puzzle 2 is unsolvable and Mystery Puzzle 3 is “hard”.
+
+	However, the topic of assessing the difficulty of a sudoku puzzle has been a widely commented one. A number of scholars and sudoku enthusiasts propose differing opinions arguing that no calculations would ever be sufficient to identify the true level of difficulty of a puzzle [See more: www.csc.kth.se]. Moreover, it is thought that a number of techniques should be implemented to get as close as possible. For instance, according to Xian-Sun ZHANG’s Research Group, it is advised to take into consideration a total number of given cells, the lower bound of the given numbers in each row and column, as well as use a combination of both the human and computer’s approach to solving the puzzle.
+
+Human approach:
+Computer approach:
+
+	I therefore decided to run additional tests on given easy and medium boards to ensure that my results were acceptable and I noticed the following:
+	
+	- Easy Board had 2172 recursive calls;
+	- Medium Board had 15662 recursive calls.
+
+	Although Easy Board indeed supports the used depth of backtracking algorithm technique, according to such the medium level should be in fact assessed as hard instead.This finding indicates that calculating the depth of backtracking algorithm solely is not sufficient, confirming that scholars and sudoku enthusiasts’ arguments are indeed valid.
+	
