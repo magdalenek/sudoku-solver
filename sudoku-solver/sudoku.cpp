@@ -214,22 +214,3 @@ bool complexity(char board[9][9], int &count){
     }
     return false;
 }
-
-int solve_as_human(const char board[9][9]){
-
-    int steps = 0;
-
-    //checks whether number can be placed in the box correctly
-    for(int x = 0; x < 9; x++){
-        for(int y = 0; y < 9; y++){
-            for(char digit = '1'; digit <= 9; digit++){
-                if(is_valid(board, x, y, digit)){
-                    int xSegmentStart = (x/3)*3;
-                    int ySegmentStart = (y/3)*3;
-
-
-                }
-            }
-        }
-    }
-}
